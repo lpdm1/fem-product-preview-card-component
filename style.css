@@ -119,28 +119,33 @@ body {
   background-color: var(--clr-primary-100);
   width: 25rem;
   border-radius: var(--size-300);
+  text-align: center;
 }
 img {
   border-radius: var(--size-300) var(--size-300) 0 0;
 }
 
 .letters {
-  padding: var(--size-300) var(--size-600);
+  text-align: left;
+  padding: var(--size-500) 0 var(--size-200) var(--size-600);
+  font-weight: 500;
 }
 .product {
+  text-align: left;
   font-size: var(--fs-800);
   font-family: var(--ff-heading);
   color: var(--clr-neutral-800);
   padding: 0 var(--size-700) 0 var(--size-600);
+  line-height: normal;
   /* border: 1px solid red; */
 }
 .description {
+  text-align: left;
   padding: var(--size-300) var(--size-600);
 }
 .price {
   display: flex;
   align-items: center;
-  justify-content: left;
   padding: var(--size-300) var(--size-600);
 }
 .current-price {
@@ -153,10 +158,18 @@ img {
 .old-price {
   text-decoration: line-through;
 }
-
 button {
   border: none;
   background-color: var(--clr-accent-400);
   border-radius: var(--size-300);
-  width: 0 auto;
+  height: var(--size-700);
+  width: 85%;
+  border: 1px solid red;
+  margin-bottom: var(--size-500);
+  color: var(--clr-primary-100);
+  font-weight: var(--fw-bold);
+}
+
+.cart {
+  background: url(/images/icon-cart.svg) no-repeat;
 }
