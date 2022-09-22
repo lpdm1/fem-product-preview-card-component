@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      k="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Product preview card component</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link k="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Product preview card component</title>
+</head>
+
+<body>
+  <section>
+    <img class="perfume-mobile perfume-desktop" src="images/image-product-mobile.jpg" alt="" />
     <div class="container">
-      <img
-        class="perfume-mobile perfume-desktop"
-        src="images/image-product-mobile.jpg"
-        alt=""
-      />
-      <div class="letters">
-        <span class="P">P</span>
-        <span class="E">E</span>
-        <span class="R">R</span>
-        <span class="F">F</span>
-        <span class="U">U</span>
-        <span class="M">M</span>
-        <span class="E">E</span>
-      </div>
+      <div class="letters">perfume</div>
       <h1 class="product">Gabrielle Essence Eau De Parfum</h1>
       <h2 class="description">
         A flora, solar and voluptous interpretation composed by Oliver Polge,
@@ -43,9 +28,11 @@
         <div class="old-price">$169.99</div>
       </div>
       <button class="btn">
-        <span class="cart">cart</span>
-        <span class="add">Add to cart</span>
+        <span><img src="images/icon-cart.svg" alt="" /></span>
+        <span>Add to cart</span>
       </button>
     </div>
-  </body>
+  </section>
+</body>
+
 </html>
