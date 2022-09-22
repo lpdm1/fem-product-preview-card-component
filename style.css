@@ -110,6 +110,7 @@ body {
   font-size: var(--fs-body);
   font-family: var(--ff-primary);
   color: var(--clr-neutral-300);
+  font-weight: var(--fw-regular);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,9 +118,10 @@ body {
 }
 section {
   background-color: var(--clr-primary-100);
-  width: 25rem;
+  width: 375px;
   border-radius: var(--size-300);
   display: grid;
+  place-content: center;
 }
 
 button {
@@ -127,7 +129,7 @@ button {
   background-color: var(--clr-accent-400);
   border-radius: var(--size-300);
   height: var(--size-700);
-  width: 85%;
+  width: 99%;
   margin-bottom: var(--size-500);
   color: var(--clr-primary-100);
   font-weight: var(--fw-bold);
@@ -149,7 +151,6 @@ button {
   letter-spacing: var(--size-100);
   text-transform: uppercase;
   font-weight: var(--fw-semi-bold);
-  border: 1px solid red;
 }
 .product {
   font-size: var(--fs-800);
@@ -160,6 +161,7 @@ button {
 }
 .description {
   margin: var(--size-300) 0;
+  font-weight: var(--fw-semi-bold);
 }
 .price {
   display: flex;
@@ -168,8 +170,6 @@ button {
   gap: var(--size-300);
 }
 .current-price {
-  display: flex;
-  justify-items: center;
   font-size: var(--fs-800);
   font-family: var(--ff-heading);
   color: var(--clr-accent-400);
