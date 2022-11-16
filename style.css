@@ -120,8 +120,6 @@ section {
   background-color: var(--clr-primary-100);
   width: 375px;
   border-radius: var(--size-300);
-  display: grid;
-  place-content: center;
 }
 
 button {
@@ -143,7 +141,12 @@ button {
   padding: var(--size-500);
 }
 
-.perfume-mobile {
+.perfume {
+  background-image: url("./images/image-product-desktop.jpg");
+  width: 375px;
+  height: 275px;
+  background-size: cover;
+  background-position: 50% 35%;
   border-radius: var(--size-300) var(--size-300) 0 0;
 }
 
@@ -176,4 +179,18 @@ button {
 }
 .old-price {
   text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+    width: 575px;
+  }
+  .perfume {
+    background-image: url("./images/image-product-desktop.jpg");
+    width: 500px;
+    height: auto;
+    background-size: cover;
+    border-radius: var(--size-300) 0 0 var(--size-300);
+  }
 }
